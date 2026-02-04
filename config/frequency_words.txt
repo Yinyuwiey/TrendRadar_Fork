@@ -28,7 +28,7 @@
 #   /赌博|博彩/       用 /.../ 包裹可以匹配多个词（用 | 分隔）
 
 [GLOBAL_FILTER]
-# 过滤标题党和狗血、娱乐圈新闻
+# 过滤标题党和狗血、琐碎、娱乐圈新闻
 震惊
 姑姑
 恋爱
@@ -196,8 +196,8 @@
 
 /特斯拉|马斯克|\bTesla\b|\bElon Musk\b|\bCybertruck\b|\bModel 3\b|\bModel Y\b|\bModel S\b|\bModel X\b|\bFSD\b/ => 特斯拉
 
-/英伟达|\bNVIDIA\b|\bGeForce\b|\bRTX\b|\bCUDA\b|\bJensen Huang\b/ => 英伟达
-/锐龙|霄龙|\bAMD\b|\bRyzen\b|\bEPYC\b|\bRadeon\b|\bLisa Su\b/ => AMD
+/英伟达|\bNVIDIA\b|\bGeForce\b|\bRTX\b|\bCUDA\b/ => 英伟达
+/锐龙|霄龙|\bAMD\b|\bRyzen\b|\bEPYC\b|\bRadeon\b/ => AMD
 
 /微软|\bMicrosoft\b|\bWindows\b|\bAzure\b|\bSatya Nadella\b|\bCopilot\b/ => 微软
 /谷歌|皮查伊|安卓|油管|\bGoogle\b|\bAlphabet\b|\bAndroid\b|\bChrome\b|\bYouTube\b|\bGemini\b|\bDeepMind\b|\bWaymo\b/ => 谷歌
@@ -215,14 +215,8 @@
 国产
 中国
 
-[东亚]
-日本
-朝鲜
-韩国
-
 [北美]
 美国
-加拿大
 
 [西欧]
 法国
@@ -240,13 +234,14 @@
 [AI 相关]
 /(?<![a-zA-Z])ai(?![a-zA-Z])/
 人工智能
+大模型
 
 [芯片]
 芯片
 光刻机
 半导体
 
-/水电|雅鲁藏布江/ => 水电
+水电
 /光伏|太阳能/ => 光伏
 核能
 能源
@@ -256,14 +251,22 @@
 机器人
 /机械狗|四足/ => 机器狗
 具身智能
+无人机
 
-/月球|登月|火星|宇宙|飞船|航天|空间站|卫星/ => 航天
+/月球|登月|火星|宇宙|飞船|航天|空间站|卫星|火箭/ => 航天
+
+/导弹|航母|潜艇|战斗机|轰炸机|核武器|防空|核设施|无人装备/ => 军事
 
 # 前沿科技
 量子
 脑机
 基因
 
-# 产业政策
+# 产业政策与宏观政策
 生产力
 数字化
+高质量发展
+深化改革
+共同富裕
+全球治理
+人类命运共同体
