@@ -176,7 +176,7 @@
 #                         企业与品牌
 # ═══════════════════════════════════════════════════════════════
 
-[科技公司及产品]
+[国内科技公司及产品]
 华为
 鸿蒙
 海思
@@ -194,13 +194,10 @@
 /\bQQ\b/i
 /\bTencent\b/i
 /\bWeChat\b/i
+
+[国外科技公司及产品]
 特斯拉
 /\bTesla\b/i
-/\bCybertruck\b/i
-/\bModel 3\b/i
-/\bModel Y\b/i
-/\bModel S\b/i
-/\bModel X\b/i
 /\bFSD\b
 英伟达
 /\bNVIDIA\b/i
@@ -229,7 +226,6 @@
 /\bAzure\b/i
 谷歌
 安卓
-油管
 /\bGoogle\b/i
 /\bAlphabet\b
 /\bAndroid\b/i
