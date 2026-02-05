@@ -53,8 +53,8 @@ platforms:
       name: "抖音"
     - id: "toutiao"
       name: "今日头条"
-    - id: "douban"
-      name: "豆瓣热门电影"
+    # - id: "douban"
+      # name: "豆瓣热门电影"
     # - id: "tieba"
     #   name: "贴吧"
     # - id: "weibo"
@@ -103,7 +103,17 @@ rss:
       name: "36氪"
       url: "https://36kr.com/feed"
       max_age_days: 1
-  
+
+      - id: "banyuetan"
+      name: "半月谈"
+      url: "https://plink.anyfeeder.com/weixin/banyuetan-weixin"
+      max_age_days: 1
+
+      - id: "nanfangzhoumo"
+      name: "南方周末"
+      url: "https://plink.anyfeeder.com/weixin/nanfangzhoumo"
+      max_age_days: 1
+
     # - id: "hacker-news"
       # name: "Hacker News"
       # url: "https://hnrss.org/frontpage"
@@ -182,8 +192,9 @@ display:
     - ai_analysis                     # 5️⃣ AI 分析区域
     # - new_items                       # 1️⃣ 新增热点区域
     - hotlist                         # 2️⃣ 热榜区域（关键词匹配）
-    - standalone                      # 4️⃣ 独立展示区
     - rss                             # 3️⃣ RSS 订阅区域
+    - standalone                      # 4️⃣ 独立展示区
+
 
   # 推送区域开关
   # 控制各区域是否启用（配合 region_order 使用）
@@ -206,8 +217,8 @@ display:
   #   - RSS 源内容较少，希望全部展示而非只显示关键词匹配的
   # 注意：同一新闻可能同时出现在关键词匹配区和独立展示区
   standalone:
-    platforms: ["wallstreetcn-hot", "cls-hot", "thepaper", "tencent", "douban"]                     # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
-    rss_feeds: []                     # RSS 源 ID 列表（如 ["hacker-news"]）
+    platforms: ["wallstreetcn-hot", "cls-hot", "thepaper", "tencent", "cankaoxiaoxi", "jin10"]                     # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
+    rss_feeds: ["banyuetan", "nanfangzhoumo", "36kr"]                     # RSS 源 ID 列表（如 ["hacker-news"]）
     max_items: 20                     # 每个源最多展示条数（0=不限制）
 
 
