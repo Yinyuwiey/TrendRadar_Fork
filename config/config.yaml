@@ -45,14 +45,14 @@ platforms:
       name: "腾讯新闻综合早报"
     - id: "cankaoxiaoxi"
       name: "参考消息"
-    - id: "ifeng"
-      name: "凤凰网"
     - id: "jin10"
       name: "金十数据"
     - id: "douyin"
       name: "抖音"
     - id: "toutiao"
       name: "今日头条"
+    # - id: "ifeng"
+      # name: "凤凰网"
     # - id: "douban"
       # name: "豆瓣热门电影"
     # - id: "tieba"
@@ -217,8 +217,8 @@ display:
   #   - RSS 源内容较少，希望全部展示而非只显示关键词匹配的
   # 注意：同一新闻可能同时出现在关键词匹配区和独立展示区
   standalone:
-    platforms: ["wallstreetcn-hot", "cls-hot", "thepaper", "tencent", "cankaoxiaoxi", "jin10"]                     # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
-    rss_feeds: ["banyuetan", "nanfangzhoumo", "36kr"]                     # RSS 源 ID 列表（如 ["hacker-news"]）
+    platforms: ["cankaoxiaoxi", "tencent", "cls-hot", "wallstreetcn-hot", "thepaper", "jin10"]                     # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
+    rss_feeds: ["36kr", "nanfangzhoumo", "banyuetan"]                     # RSS 源 ID 列表（如 ["hacker-news"]）
     max_items: 20                     # 每个源最多展示条数（0=不限制）
 
 
