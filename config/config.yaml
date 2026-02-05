@@ -104,12 +104,12 @@ rss:
       url: "https://36kr.com/feed"
       max_age_days: 1
 
-      - id: "banyuetan"
+    - id: "banyuetan"
       name: "半月谈"
       url: "https://plink.anyfeeder.com/weixin/banyuetan-weixin"
       max_age_days: 1
 
-      - id: "nanfangzhoumo"
+    - id: "nanfangzhoumo"
       name: "南方周末"
       url: "https://plink.anyfeeder.com/weixin/nanfangzhoumo"
       max_age_days: 1
