@@ -47,6 +47,7 @@
 网友
 演技
 前妻
+前夫
 我们
 我的
 吃什么
@@ -175,37 +176,74 @@
 #                         企业与品牌
 # ═══════════════════════════════════════════════════════════════
 
-/深度求索|幻方量化|梁文锋|\bDeepSeek\b/ => DeepSeek
+[科技公司及产品]
+华为
+鸿蒙
+海思
+昇腾
+鲲鹏
+/\bHarmonyOS\b/i
+/\bHiSilicon\b/i
+字节
+/\bByteDance\b/i
+/\bLark\b
+/\bCapCut\b/i
+腾讯
+鹅厂
+微信
+/\bQQ\b/i
+/\bTencent\b/i
+/\bWeChat\b/i
+特斯拉
+/\bTesla\b/i
+/\bCybertruck\b/i
+/\bModel 3\b/i
+/\bModel Y\b/i
+/\bModel S\b/i
+/\bModel X\b/i
+/\bFSD\b
+英伟达
+/\bNVIDIA\b/i
+/\bGeForce\b/i
+/\bRTX\b
+/\bCUDA\b
+苹果
+/\biPhone\b/i
+/\biPad\b/i
+/\bMacBook\b/i
+/\biOS\b/i
+/\bVision Pro\b/i
+/\bAirPods\b/i
+/\bApple\b
+!水果
+!价格
+锐龙
+霄龙
+/\bAMD\b
+/\bRyzen\b/i
+/\bEPYC\b/i
+/\bRadeon\b/i
+微软
+/\bMicrosoft\b/i
+/\bWindows\b
+/\bAzure\b/i
+谷歌
+安卓
+油管
+/\bGoogle\b/i
+/\bAlphabet\b
+/\bAndroid\b/i
+/\bChrome\b/i
+/\bYouTube\b/i
+/\bWaymo\b/i
 
-/鸿蒙|海思|昇腾|鲲鹏|\bHUAWEI\b|\bHarmonyOS\b|\bHiSilicon\b/ => 华为
-
-/宇树|王兴兴|\bUnitree\b/ => 宇树机器人
-
-/智元|灵犀|AgiBot/ => 智元机器人
-/众擎|EngineAI/ => 众擎机器人
-
-/黑神话|冯骥/ => 黑神话悟空
-
-/三体|流浪地球|刘慈欣|郭帆/ => 三体/流浪地球
-
-/字节|\bByteDance\b|\bLark\b|\bCapCut\b/ => 字节跳动
-
-/腾讯|鹅厂|微信|QQ|天美|\bTencent\b|\bPony Ma\b|\bWeChat\b|\bLightSpeed\b/ => 腾讯
-
-/kimi|qwen|minimax|glm/ => 国产开源模型
-
-/特斯拉|马斯克|\bTesla\b|\bElon Musk\b|\bCybertruck\b|\bModel 3\b|\bModel Y\b|\bModel S\b|\bModel X\b|\bFSD\b/ => 特斯拉
-
-/英伟达|\bNVIDIA\b|\bGeForce\b|\bRTX\b|\bCUDA\b/ => 英伟达
-/锐龙|霄龙|\bAMD\b|\bRyzen\b|\bEPYC\b|\bRadeon\b/ => AMD
-
-/微软|\bMicrosoft\b|\bWindows\b|\bAzure\b|\bSatya Nadella\b|\bCopilot\b/ => 微软
-/谷歌|皮查伊|安卓|油管|\bGoogle\b|\bAlphabet\b|\bAndroid\b|\bChrome\b|\bYouTube\b|\bGemini\b|\bDeepMind\b|\bWaymo\b/ => 谷歌
-/库克|\biPhone\b|\biPad\b|\bMacBook\b|\biOS\b|\bVision Pro\b|\bAirPods\b|\bApple\b|\bTim Cook\b/ => 苹果
-
-/\bOpenAI\b|\bChatGPT\b|\bSora\b|\bDALL-E\b|\bSam Altman\b|\bGreg Brockman\b/ => OpenAI
-/\bAnthropic\b|\bClaude\b|\bDario Amodei\b/ => Claude
-
+[文娱]
+黑神话
+冯骥
+三体
+流浪地球
+刘慈欣
+郭帆
 
 # ═══════════════════════════════════════════════════════════════
 #                         国家与地区
@@ -215,27 +253,29 @@
 国产
 中国
 
-[北美]
+[西方]
 美国
-
-[西欧]
 法国
 英国
 
-/俄罗斯|俄国/ => 俄罗斯
-
+[亚洲]
+俄罗斯
+俄国
 印度
+日本
+朝鲜
+韩国
 
 
 # ═══════════════════════════════════════════════════════════════
 #                         科技领域
 # ═══════════════════════════════════════════════════════════════
 
-/水电|核能|能源|光伏|太阳能/ => 能源
+/水电|风电|核能|能源|光伏|太阳能/ => 能源
 
 /自动驾驶|无人驾驶|智驾/ => 自动驾驶
 
-/机器人|具身智能|机械狗|四足/ => 具身智能
+/Unitree|宇树|智元|灵犀|AgiBot|众擎|EngineAI|机器人|具身智能|机械狗|四足/ => 具身智能
 
 /月球|登月|火星|宇宙|飞船|航天|空间站|卫星|火箭/ => 航天
 
@@ -245,6 +285,29 @@
 /(?<![a-zA-Z])ai(?![a-zA-Z])/
 人工智能
 大模型
+/\bDeepSeek\b/i
+深度求索
+幻方量化
+梁文锋
+/\bCopilot\b/i
+/\bkimi\b/i
+/\bqwen\b/i
+千问
+/\bminimax\b/i
+/\bglm\b/i
+智谱
+/\bgrok\b/i
+/\bAnthropic\b/i
+/\bClaude\b/i
+/\bDario Amodei\b/i
+/\bGemini\b/i
+/\bDeepMind\b/i
+/\bOpenAI\b/i
+/\bChatGPT\b/i
+/\bSora\b/i
+/\bDALL-E\b/i
+/\bSam Altman\b/i
+/\bGreg Brockman\b/i
 
 [芯片]
 芯片
@@ -255,6 +318,7 @@
 量子
 脑机
 基因
+可控核聚变
 
 [产业政策与宏观政策]
 生产力
