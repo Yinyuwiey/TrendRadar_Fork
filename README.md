@@ -1936,7 +1936,6 @@ ai_translation:
    **配置方法：**
    在 GitHub Secrets (或 `.env` / `config.yaml`) 中添加：
    - `AI_API_KEY`: 你的 API Key（支持 DeepSeek、OpenAI 等）
-   - `AI_PROVIDER`: 服务商名称（如 `deepseek`, `openai`）
 
    就这样，无需复杂部署，下次推送时你就会看到智能分析报告了。
 
