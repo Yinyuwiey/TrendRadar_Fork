@@ -43,8 +43,12 @@ platforms:
       name: "财联社热门"
     - id: "tencent"
       name: "腾讯新闻综合早报"
+    - id: "cankaoxiaoxi"
+      name: "参考消息"
     - id: "ifeng"
       name: "凤凰网"
+    - id: "jin10"
+      name: "金十数据"
     - id: "douyin"
       name: "抖音"
     - id: "toutiao"
@@ -71,7 +75,7 @@ platforms:
 # max_age_days: 可选，覆盖全局 freshness_filter.max_age_days
 # ===============================================================
 rss:
-  enabled: false                       # 是否启用 RSS 抓取
+  enabled: true                       # 是否启用 RSS 抓取
 
   # 文章新鲜度过滤配置（全局默认值）
   # 过滤掉发布时间超过指定天数的旧文章，避免同一篇文章重复出现在推送中
@@ -95,20 +99,25 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
-    - id: "hacker-news"
-      name: "Hacker News"
-      url: "https://hnrss.org/frontpage"
+    - id: "36kr"
+      name: "36氪"
+      url: "https://36kr.com/feed"
+      max_age_days: 1
+  
+    # - id: "hacker-news"
+      # name: "Hacker News"
+      # url: "https://hnrss.org/frontpage"
       # max_age_days: 1               # 示例：只推送1天内的文章
 
-    - id: "ruanyifeng"
-      name: "阮一峰的网络日志"
-      url: "http://www.ruanyifeng.com/blog/atom.xml"
+    # - id: "ruanyifeng"
+      # name: "阮一峰的网络日志"
+      # url: "http://www.ruanyifeng.com/blog/atom.xml"
       # max_age_days: 7               # 示例：推送7天内的文章（更新较慢的博客）
     
-    - id: "yahoo-finance"
-      name: "雅虎财经"
-      url: "https://finance.yahoo.com/news/rssindex"
-      enabled: false                  # 禁用
+    # - id: "yahoo-finance"
+      # name: "雅虎财经"
+      # url: "https://finance.yahoo.com/news/rssindex"
+      # enabled: false                  # 禁用
 
     # 自定义源示例
     # - id: "custom-feed"
@@ -173,8 +182,8 @@ display:
     - ai_analysis                     # 5️⃣ AI 分析区域
     # - new_items                       # 1️⃣ 新增热点区域
     - hotlist                         # 2️⃣ 热榜区域（关键词匹配）
-    # - rss                             # 3️⃣ RSS 订阅区域
     - standalone                      # 4️⃣ 独立展示区
+    - rss                             # 3️⃣ RSS 订阅区域
 
   # 推送区域开关
   # 控制各区域是否启用（配合 region_order 使用）
@@ -183,7 +192,7 @@ display:
     new_items: false                   # 新增热点区域（含热榜新增 + RSS 新增）
                                       # 注：热点词汇统计中的新增标记🆕不受此配置影响
 
-    rss: false                         # RSS 订阅区域
+    rss: true                         # RSS 订阅区域
                                       # 开启后将对 RSS 进行关键词分析并在通知中展示
                                       # 关闭后跳过分析，但独立展示区不受影响
 
@@ -453,7 +462,7 @@ ai_analysis:
                                       # GitHub Action 部署默认推送约 20 次（每小时推送一次）， 约 0.1 元/天
                                       # Docker 部署默认推送 48 次(每半小时推送一次)， 约 0.2 元/天
 
-  include_rss: false                 # 是否包含 RSS 内容进行分析
+  include_rss: true                 # 是否包含 RSS 内容进行分析
 
   include_rank_timeline: true      # 是否传递完整排名时间线
                                     # false: 使用简化格式（排名范围+时间范围+出现次数）
