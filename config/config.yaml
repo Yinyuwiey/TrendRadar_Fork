@@ -442,7 +442,7 @@ ai_analysis:
   mode: "follow_report"
 
   # 分析内容配置
-  max_news_for_analysis: 100         # 参与分析的新闻数量上限（控制成本关键项）
+  max_news_for_analysis: 150         # 参与分析的新闻数量上限（控制成本关键项）
                                     # 推送消息顶部会显示实际的 AI 分析数供参考
 
                                     # api 成本估算 (仅供参考)
