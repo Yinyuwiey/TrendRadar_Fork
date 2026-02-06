@@ -37,8 +37,6 @@ platforms:
       name: "华尔街见闻"
     - id: "thepaper"
       name: "澎湃新闻"
-    - id: "bilibili-hot-search"
-      name: "bilibili 热搜"
     - id: "cls-hot"
       name: "财联社热门"
     - id: "tencent"
@@ -51,6 +49,8 @@ platforms:
       name: "抖音"
     - id: "toutiao"
       name: "今日头条"
+    # - id: "bilibili-hot-search"
+      # name: "bilibili 热搜"
     # - id: "ifeng"
       # name: "凤凰网"
     # - id: "douban"
@@ -218,7 +218,7 @@ display:
   # 注意：同一新闻可能同时出现在关键词匹配区和独立展示区
   standalone:
     platforms: ["cankaoxiaoxi", "thepaper", "cls-hot", "wallstreetcn-hot", "jin10"]                     # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
-    rss_feeds: ["36kr", "nanfangzhoumo", "banyuetan"]                     # RSS 源 ID 列表（如 ["hacker-news"]）
+    rss_feeds: ["36kr", "banyuetan"]                     # RSS 源 ID 列表（如 ["hacker-news"]）
     max_items: 20                     # 每个源最多展示条数（0=不限制）
 
 
