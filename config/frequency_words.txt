@@ -192,6 +192,8 @@
 /\bVision Pro\b/i
 /\bAirPods\b/i
 /\bApple\b
+英特尔
+/\bIntel\b/i
 锐龙
 霄龙
 /\bAMD\b
