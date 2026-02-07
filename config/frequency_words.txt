@@ -184,11 +184,7 @@
 /\bRTX\b
 /\bCUDA\b
 苹果
-!水果
-!种植
-!丰产
-!丰收
-!滞销
+^(?!.*(水果|种植|丰产|丰收|滞销)).*$
 /\biPhone\b/i
 /\biPad\b/i
 /\bMacBook\b/i
